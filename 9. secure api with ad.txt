@@ -1,0 +1,26 @@
+secure api with ad
+
+
+>Visit Azure Portal 
+>Search App Registration
+>Click on New Registration
+>Provide proper name and click on Register
+>It will redirects to Overview Page 
+>Select to Expose an API  
+>Set Default App URL
+>Set value in opened scope page  
+>Register an application in Azure AD to represent a client Application  
+>Navigate to Azure Home Page 
+>Again search App Registration 
+>Click on New Registration
+>Now click on Register
+>You will redirect to this page  
+>Select Certificate and Secrets – 
+>And select client Secret – Add Description and Expires details- 
+>Grant Permission in Azure AD 
+>Navigate to Azure Portal  
+>Choose your client app and grant permission –
+>Select View All permission 
+>Click on Add permission  
+>Select on My Api and select your App
+>Add Required Permission under Delegated Permission 

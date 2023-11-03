@@ -1,0 +1,18 @@
+create api manag serv
+
+api management service>create>review and create
+>home> our resource made> APIs on left side> + HTTP
+>getdata, getdata, getdata.org, getdata> create
+>Echo api> test>post>send
+
+api gateway serv
+Step 1- Sign in to you AWS account.
+Step 2- search for API Gateway, and create an AWS Gateway instance
+Step 3- Select Import from the REST API selection as shown in 
+Step 4- Select Import from swagger and copy or select the swagger file
+Step 5- To Create an API definition in Swagger. First login to the swagger account
+Step 6- Then fill the Form which includes the version, name and other details click on Create API button
+Step 7- Copy the API and definition from swagger as shown in 
+Step 8-Paste the definition and in In the Settings section, select the endpoint type. Select “Edge Optimized” option and then click on import 
+ 
+

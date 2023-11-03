@@ -1,0 +1,31 @@
+db design for micros appli using the db
+
+>SQl db
+>create sql db
+>server: Create server
+give name, loc, auth: use sql auth, login details and remember
+
+sql pool> NO
+>congif db: 
+	basic
+>Additional settings: use existin data- sample
+>review and create
+
+>go to resource> query editor> login> in overview- set server firewall>
+>public access- selected netwok,
+firewall rules- add your client ip> save
+
+>in overview> copy server name link
+
+>sql server management studio
+server type:db engine
+server name: paste link
+auth type: SQl serv auth
+login and details > connect
+
+>type querry> select * from SalesLT.Customer
+
+
+
+
+

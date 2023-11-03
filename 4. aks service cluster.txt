@@ -1,0 +1,81 @@
+>kubectl create deployment aksdemo --image mcr.microsoft.com/azuredocs/aci-helloworld:latest --replicas=1 deployment.apps/aksdemo created
+>kubectl get deployment
+>kubectl get pods
+>kubectl expose deployment aksdemo --type=LoadBalancer --port=80 --target-port=80 service/aksdemo exposed
+
+>go home page>search kubernetes>under resources> copy IP and paste in browser
+
+
+
+
+
+Practical No.4B - Enable Azure Dev Space on an AKS Cluster 
+
+Steps – 
+1.Open Kubernetes Services
+2.Click on Dev Space
+3.Install Azure CLI
+4.Open CMD 
+5.Enter command AZ LOGIN
+6.Enter command 
+az aks use-dev-spaces –n CAD–g CAD
+7.Install Azure Dev Space
+
+Practical No.4C - Configure Visual Studio to work with an azure kubernetes services Cluster 
+Steps – 
+1.Install Visual Studio Enterprise 2017 
+2.Open Visual Studio 2017 >Tool > Extensions & Update
+3.Search for Kubernetes Services tool
+4.Click on Download 
+5.Close visual studio
+6.click on Modify(install kubernetes tool extension)
+7.Open Visual studio 
+8.Click on new project 
+9.Select Asp.net Core Web Application > click on Ok
+10.Select Model View Control > Click on OK
+11.Click On Down Arrow of IIS Express 
+12.We can see option of Azure Dev Space
+
+Practical No.4D - Configure Visual Studio Code to work with an azure kubernetes services Cluster 
+Steps – 
+1.Install visual studio code
+2.Open extension window 
+3.Search for Azure Dev Space
+4.Click Install
+5.Install Azure CLI (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) 
+6.Open cmd 
+7.Enter command az Login
+8.Enter Command to install AZDS utility
+    az aks use-dev-spaces –n CAD –g CAD
+
+
+Practical No.4E - Deploy Application on AKS
+
+1.Core web API 
+Steps – 
+1.Open Visual Studio
+2.Click on New project
+3.Select Cloud Container Application for Kubernetes 
+4.Give Name of the application (Employee) & click on Ok
+5.Select API option & click on OK button
+6.Make sure Azure Dev Space is selected in menu.
+7.Open ValuesController.cs file
+8.Edit line number 16 as shown in the screen shot
+9.Save changes & press F5 button to run the application
+10.Select cluster name & space > click on OK button
+ 
+2.Node.js API
+Steps – 
+1.Create MYAPP folder 
+2.Open visual studio code
+3.Open folder MYAPP in visual studio code
+4.Create new file server.js & pacakge.json 
+5.From windows explorer create PUBLIC folder in MYAPP folder
+6.Now create new file using public folder by using visual studio code
+7.Create file index.html & app.css
+8.Open command palette from view menu (ctrl+shif+p)
+9.Enter azure dev space & click on it
+10.Click on configure
+11.Click DEBUG icon on left & then click on LAUNCH SERVER(AZDS)
+12.OUTPUT  will display in Output window
+

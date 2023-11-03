@@ -1,0 +1,17 @@
+create aks cluster
+
+create resource group
+serach kuberneetes service
+region: central ind, primary node pool
+authenticaton method:service principal, RBAC: En
+Network> congif: Kub, Azure mon for cont:En
+review and create
+
+using cli
+1:  Install the Azure CLI to run CLI reference commands.
+2: Sign in to the Azure CLI by using the az login command. To finish the authentication process, follow the steps displayed in your terminal. 
+3: Run az version to find the version and dependent libraries that are installed. To upgrade to the latest version, run az upgrade
+4: cretae res grop
+az group create --name myResourceGroup --location centralindia 
+5. create aks cluster
+az aks create --resource-group myResourceGroup --name myAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys 

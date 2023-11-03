@@ -1,0 +1,77 @@
+a. Install Spring Boot Extensions Pack.       
+b. Install Java Extensions Pack.       
+c. Install Maven for Java.
+
+Choose Java for Specify Project Language.
+Enter com.microservices in the input group ID for your project. 
+Enter employeespringservice in the input artifact ID for your project. 
+Choose the following dependencies
+	a. DevTools b. Lombok c. Web d. Actuator 
+
+
+
+
+
+
+
+employee.java
+package com.microservices.employeespringservice;
+
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+/*** Employee ***/
+@Getter
+@Setter
+@EqualsAndHashCode
+@AllArgsConstructor
+public class employee {
+    private String firstName;
+    private String lastName;
+    private String ipAddress;
+}
+
+employeecontroller.java
+package com.microservices.employeespringservice;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+/** * EmployeeController */
+@Controller
+public class employeecontroller {
+    @Autowired
+    private employeeservice employeeService;
+
+    @GetMapping("/")
+    @ResponseBody
+    public employee getEmployee() {
+        return employeeService.GetEmployee("Spring", "Boot");
+    }
+}
+
+employeeservice.java
+package com.microservices.employeespringservice;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import org.springframework.stereotype.Service;
+
+/** * EmployeeService */
+@Service
+public class employeeservice {
+    public employee GetEmployee(String firstName, String lastName) {
+        String ipAddress;
+        try {
+            getHostAddress().toString();
+        } catch (UnknownHostException e) {
+            ipAddress = e.getMessage();
+        }
+        employee employee = new employee(firstName, lastName, ipAddress);
+        return employee;
+    }
+}
