@@ -1,0 +1,43 @@
+P7A - AWS LAMBDA FUNCTION
+
+1. login to AWS Webservices
+2. click on services and search lambda in search box
+3. click on create a lambda function
+4. Provide Basic information such as Function name as lambdafunctiondemo1, 
+select runtime .netcore and click on create function
+5. Then the lambda function is created 
+6. click on test and give it a name event1
+7. scrol up click on test event1
+8. output will be execution result succeeded
+
+
+
+
+p7b - AWS Lambda function from Visual Studio
+
+1. open visual studio
+2. click on Extensions in that click on AWS toolkit
+3. and select AWS Toolkit for visual studio 2022
+4. create new project
+5. select AWS SEVERLESS APPLICATION (.NET CORE- C#)
+6. GIVE project name and click on  create
+7. select asp.net core web API and click on finish
+
+Steps to get Access Keys
+1. open aws webservices
+2. In profile click on security credentials
+3. click on access keys (access ley ID and secret access key)
+and click on create new access key
+4. download the key file
+5. In Visual Studio Click on View->AWS Explorer and enter cred
+6. In new account profile enter access key ID, secret access key and profile name and click on ok
+7. In AWS webservices search storage in search box and select S3 
+8. desable server side enceyption and click on create bucket
+9. bucket is created successfully
+
+To publish 
+
+
+11. go to visual studio right click on project and click on pack
+12. enter stack name and s3 bucket and click on publish
+13. copy the url paste on browser and hit enter for output
